@@ -1,4 +1,4 @@
-# lol-autolock-champions 🔒
+# lol-autolock-champions 🔎
 
 **lol-autolock-champions** is a Python tool for auto-locking champions in League of Legends, with an intuitive graphical interface for selecting and inputting champions quickly and efficiently. 
 
