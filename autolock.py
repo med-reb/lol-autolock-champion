@@ -28,15 +28,11 @@ def btn_clicked():
         champions.append("")
     app(selected_option.get())
 
-
-
-
 def draw_outline(draw, location):
     left, top, width, height = location
     right, bottom = left + width, top + height
-    outline_color = (255, 0, 0)  # Couleur du contour en rouge
+    outline_color = (255, 0, 0)
 
-    # Dessine les contours autour de la région
     draw.rectangle([left, top, right, bottom], outline=outline_color)
 
 def left_click(x,y,z):
@@ -78,34 +74,6 @@ def app(language):
             time.sleep(2)
 
     quit()
-
-
-"""# Parcourt toutes les images dans le dossier
-for image_to_find in os.listdir(folder):
-    card = folder + image_to_find
-    print(image_to_find)
-    location = pyautogui.locateOnScreen(card, confidence=0.7)
-    if location:
-        print("Image trouvée à la position :", location)
-        print("Coordonnées du coin supérieur gauche :", location[0:2])
-
-        # Récupère la capture d'écran
-        screenshot = pyautogui.screenshot()
-
-        # Dessine un contour autour de la zone
-        draw = ImageDraw.Draw(screenshot)
-        draw_outline(draw, location)
-
-        # Enregistre l'image modifiée dans le même répertoire avec un nom différent
-        new_image_path = os.path.join(folder, f"outlined_{image_to_find}")
-        screenshot.save(new_image_path)
-
-        print(f"Image modifiée enregistrée à {new_image_path}")
-        break
-    else:
-        print("Image non trouvée.")"""
-
-
 
 root = Tk()
 
@@ -151,6 +119,7 @@ entry0 = Entry(
     justify="center",
     bg="#8EFF33",
     highlightthickness=0,
+    fg="black",
     font=bold_font)
 
 entry0.place(
@@ -167,6 +136,7 @@ entry1 = Entry(
     bd=0,
     justify="center",
     bg="#d9d9d9",
+    fg="black",
     highlightthickness=0,
     font=bold_font)
 
@@ -184,6 +154,7 @@ entry2 = Entry(
     bd=0,
     justify="center",
     bg="#d9d9d9",
+    fg="black",
     highlightthickness=0,
     font=bold_font)
 
